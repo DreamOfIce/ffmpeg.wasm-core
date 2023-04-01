@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DreamOfIce/FFmpeg.git"
+    "url": "git+https://github.com/DreamOfIce/ffmpeg.wasm-core.git"
   },
   "keywords": [
     "ffmpeg",
@@ -22,7 +22,7 @@
   "author": "jeromewus@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DreamOfIce/FFmpeg/issues"
+    "url": "https://github.com/DreamOfIce/ffmpeg.wasm-core/issues"
   },
-  "homepage": "https://github.com/DreamOfIce/FFmpeg#readme"
+  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme"
 }
