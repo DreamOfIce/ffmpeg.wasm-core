@@ -1,11 +1,12 @@
 {
   "name": "cores",
+  "private":true,
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "serve .",
-    "test": "node --experimental-wasm-threads --experimental-wasm-bulk-memory ./node_modules/.bin/jest --verbose"
+    "test": "jest --verbose"
   },
   "author": "jeromewus@gmail.com",
   "license": "MIT",

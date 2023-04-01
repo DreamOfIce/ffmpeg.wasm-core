@@ -1,6 +1,6 @@
 {
-  "name": "@ffmpeg/core",
-  "version": "0.11.0",
+  "name": "@ffmpeg.wasm/core-mt",
+  "version": "0.12.0",
   "description": "ffmpeg.wasm core",
   "main": "dist/ffmpeg-core.js",
   "files": [
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ffmpegwasm/FFmpeg.git"
+    "url": "git+https://github.com/DreamOfIce/FFmpeg.git"
   },
   "keywords": [
     "ffmpeg",
@@ -22,7 +22,7 @@
   "author": "jeromewus@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ffmpegwasm/FFmpeg/issues"
+    "url": "https://github.com/DreamOfIce/FFmpeg/issues"
   },
-  "homepage": "https://github.com/ffmpegwasm/FFmpeg#readme"
+  "homepage": "https://github.com/DreamOfIce/FFmpeg#readme"
 }

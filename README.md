@@ -2,20 +2,20 @@ FFmpeg.wasm Core
 ================
 
 [![Node Version](https://img.shields.io/node/v/@ffmpeg/ffmpeg.svg)](https://img.shields.io/node/v/@ffmpeg/ffmpeg.svg)
-![FFmpeg.wasm Core](https://github.com/ffmpegwasm/ffmpeg.wasm-core/workflows/FFmpeg.wasm/badge.svg?branch=n4.3.1-wasm)
-![npm (tag)](https://img.shields.io/npm/v/@ffmpeg/core/latest)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ffmpegwasm/ffmpeg.wasm-core/graphs/commit-activity)
-[![Downloads Total](https://img.shields.io/npm/dt/@ffmpeg/core.svg)](https://www.npmjs.com/package/@ffmpeg/core)
-[![Downloads Month](https://img.shields.io/npm/dm/@ffmpeg/core.svg)](https://www.npmjs.com/package/@ffmpeg/core)
+![FFmpeg.wasm Core](https://github.com/DreamOfIce/ffmpeg.wasm-core/workflows/FFmpeg.wasm/badge.svg?branch=n4.3.1-wasm)
+![npm (tag)](https://img.shields.io/npm/v/@ffmpeg.wasm/core/latest)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/DreamOfIce/ffmpeg.wasm-core/graphs/commit-activity)
+[![Downloads Total](https://img.shields.io/npm/dt/@ffmpeg.wasm/core.svg)](https://www.npmjs.com/package/@ffmpeg.wasm/core)
+[![Downloads Month](https://img.shields.io/npm/dm/@ffmpeg.wasm/core.svg)](https://www.npmjs.com/package/@ffmpeg.wasm/core)
 
 This is the core part of FFmpeg.wasm where we transpile C/C++ code of FFmpeg to JavaScript/WebAssembly code. It is still very experimental (and slow), but shows the possibilities of using FFmpeg purely in the browser.
 
-If you have any issues for this repository, please put it here: https://github.com/ffmpegwasm/ffmpeg.wasm/issues
+If you have any issues for this repository, please put it here: https://github.com/DreamOfIce/ffmpeg.wasm/issues
 
 ## Setup
 
 ```
-$ git clone https://github.com/ffmpegwasm/ffmpeg.wasm-core
+$ git clone https://github.com/DreamOfIce/ffmpeg.wasm-core
 $ git submodule update --init --recursive
 ```
 
@@ -55,7 +55,7 @@ $ npm test
 
 | Library/Tool Name | Version | Remark |
 | ----------------- | ------- | ------ |
-| Emscripten | 3.1.30 | |
+| Emscripten | 3.1.34 | |
 | FFmpeg | 4.3.1 | |
 
 #### Video

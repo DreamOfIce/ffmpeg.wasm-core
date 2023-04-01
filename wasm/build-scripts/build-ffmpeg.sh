@@ -5,7 +5,7 @@ source $(dirname $0)/var.sh
 
 if [[ "$FFMPEG_ST" != "yes" ]]; then
   mkdir -p wasm/packages/core/dist
-  EXPORTED_FUNCTIONS="[_main, __emscripten_proxy_main]"
+  EXPORTED_FUNCTIONS="[_main, __emscripten_proxy_main, _malloc]"
   EXTRA_FLAGS=(
     -pthread
     -s USE_PTHREADS=1                             # enable pthreads support
@@ -15,7 +15,7 @@ if [[ "$FFMPEG_ST" != "yes" ]]; then
   )
 else
   mkdir -p wasm/packages/core-st/dist
-  EXPORTED_FUNCTIONS="[_main]"
+  EXPORTED_FUNCTIONS="[_main, _malloc]"
   EXTRA_FLAGS=(
     -o wasm/packages/core-st/dist/ffmpeg-core.js
 		-s INITIAL_MEMORY=33554432                   # 32MB
