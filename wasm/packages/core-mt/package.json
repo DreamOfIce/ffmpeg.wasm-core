@@ -1,11 +1,10 @@
 {
   "name": "@ffmpeg.wasm/core-mt",
   "version": "0.12.0",
-  "description": "ffmpeg.wasm core",
+  "description": "ffmpeg.wasm core (mult thread)",
   "main": "dist/ffmpeg-core.js",
   "files": [
     "dist",
-    "package.json",
     "package-lock.json"
   ],
   "repository": {
@@ -24,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/DreamOfIce/ffmpeg.wasm-core/issues"
   },
-  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme"
+  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -4,13 +4,13 @@ set -eo pipefail
 source $(dirname $0)/var.sh
 
 if [[ "$FFMPEG_ST" != "yes" ]]; then
-  mkdir -p wasm/packages/core/dist
+  mkdir -p wasm/packages/core-mt/dist
   EXPORTED_FUNCTIONS="[_main, __emscripten_proxy_main, _malloc]"
   EXTRA_FLAGS=(
     -pthread
     -s USE_PTHREADS=1                             # enable pthreads support
     -s PROXY_TO_PTHREAD=1                         # detach main() from browser/UI main thread
-    -o wasm/packages/core/dist/ffmpeg-core.js
+    -o wasm/packages/core-mt/dist/ffmpeg-core.js
 		-s INITIAL_MEMORY=1073741824                  # 1GB
   )
 else

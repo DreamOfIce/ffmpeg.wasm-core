@@ -1,4 +1,4 @@
 const base = require('./transcode-base');
-base('mt','core');
-base('mt','core.mp4-scale',(name) => name == 'mp4 scale');
-base('mt','core.png-to-mp4',(name) => name == 'png to mp4');
+base('mt','core-mt');
+base('mt','core-mt.mp4-scale',(name) => name == 'mp4 scale');
+base('mt','core-mt.png-to-mp4',(name) => name == 'png to mp4');

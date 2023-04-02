@@ -66,7 +66,8 @@ $ npm test
 | x265 | 3.4 | mp4 format, only works with `-pix_fmt yuv420p10le` and `-pix_fmt yuv420p12le` |
 | libvpx | 1.9.0 | webm format |
 | theora | 1.1.1 | ogv format |
-| aom | 1.0.0 | mkv format, extremely slow (takes over 120s for 1s video), not recommended to use |
+<!-- currently disable -->
+<!-- | aom | 1.0.0 | mkv format, extremely slow (takes over 120s for 1s video), not recommended to use | -->
 
 #### Audio
 

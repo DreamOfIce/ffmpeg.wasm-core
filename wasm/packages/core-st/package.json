@@ -5,7 +5,6 @@
   "main": "dist/ffmpeg-core.js",
   "files": [
     "dist",
-    "package.json",
     "package-lock.json"
   ],
   "repository": {
@@ -24,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/DreamOfIce/ffmpeg.wasm-core/issues"
   },
-  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme"
+  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
