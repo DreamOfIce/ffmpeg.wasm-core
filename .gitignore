@@ -38,3 +38,5 @@
 /mapfile
 /tools/python/__pycache__/
 /build
+dist
+node_modules

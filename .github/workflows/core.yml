@@ -2,16 +2,16 @@ name: Build FFmpeg.wasm
 on:
   push:
     branches:
-      - n4.3.1-wasm
+      - next
   pull_request:
     branches:
-      - n4.3.1-wasm
+      - next
 
 env:
   FFMPEG_ST: no
-  DIST_PATH: wasm/packages/core/dist
+  DIST_PATH: packages/core/dist
   CACHE_KEY_PREFIX: ffmpeg.wasm-core
-  # EM_VERSION: 3.1.34
+  # EM_VERSION: 3.1.35
   # EM_CACHE_FOLDER: 'emsdk-cache'
 
 jobs:

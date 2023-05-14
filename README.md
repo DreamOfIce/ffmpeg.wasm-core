@@ -37,7 +37,7 @@ Setup the emsdk from [HERE](https://emscripten.org/docs/getting_started/download
 $ bash build.sh
 ```
 
-If nothing goes wrong, you can find JavaScript files in `wasm/packages/core/dist`.
+If nothing goes wrong, you can find JavaScript files in `packages/core/dist`.
 
 ## Test
 
@@ -55,7 +55,7 @@ $ npm test
 
 | Library/Tool Name | Version | Remark |
 | ----------------- | ------- | ------ |
-| Emscripten | 3.1.34 | |
+| Emscripten | 3.1.35 | |
 | FFmpeg | 4.3.1 | |
 
 #### Video

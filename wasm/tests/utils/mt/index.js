@@ -13,12 +13,12 @@ const ffmpeg = ({ core, args }) =>
   });
 
 const getCore = (corename) =>
-  require(`../../../packages/${corename}/dist/ffmpeg-core`)({
+  require(`../../../../packages/${corename}/dist/ffmpeg-core`)({
     noExitRuntime: true,
     printErr: () => {},
     print: (m) => {
       if (m === "FFMPEG_END") {
-        setTimeout(resolve,1000); // otherwise wasm will not close correctly when run with jest
+        setTimeout(resolve, 1000); // otherwise wasm will not close correctly when run with jest
       }
     },
   });

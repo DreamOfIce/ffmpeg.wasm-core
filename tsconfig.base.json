@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@tsconfig/node-lts",
+    "@tsconfig/strictest/tsconfig.json"
+  ]
+}
