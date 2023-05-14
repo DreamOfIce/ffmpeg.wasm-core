@@ -15,5 +15,7 @@ interface FFmpegMultThreadCore extends EmscriptenModule {
 
 type FFmpegCoreConstructor = EmscriptenModuleFactory<FFmpegMultThreadCore>;
 
-export default FFmpegCoreConstructor;
+declare const core: FFmpegCoreConstructor;
+
+export default core;
 export type { FFmpegMultThreadCore, FFmpegCoreConstructor };
