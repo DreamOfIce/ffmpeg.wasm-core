@@ -25,6 +25,7 @@ struct FFmpegWasmFlags
 
 EMSCRIPTEN_BINDINGS(ffmpeg)
 {
+  emscripten::constant("simd", false); // reserved for future use
   emscripten::constant("thread", (bool)HAVE_THREADS);
   emscripten::constant("wasi", false); // reserved for future use
 }
