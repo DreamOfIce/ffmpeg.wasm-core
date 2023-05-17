@@ -17,11 +17,6 @@ extern int main(int argc, char **argv);
 /**
  * Export flags
  */
-struct FFmpegWasmFlags
-{
-  bool thread;
-  bool wasi;
-} flags = {HAVE_THREADS, false};
 
 EMSCRIPTEN_BINDINGS(ffmpeg)
 {
