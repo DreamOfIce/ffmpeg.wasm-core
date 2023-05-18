@@ -1,7 +1,8 @@
 interface FFmpegMultThreadCore extends EmscriptenModule {
   //flags
-  thread: true;
-  wasi: false;
+  simd: boolean;
+  thread: boolean;
+  wasi: boolean;
   // methods
   addFunction: typeof addFunction;
   ccall: typeof ccall;
@@ -18,4 +19,4 @@ type FFmpegCoreConstructor = EmscriptenModuleFactory<FFmpegMultThreadCore>;
 declare const core: FFmpegCoreConstructor;
 
 export default core;
-export type { FFmpegMultThreadCore, FFmpegCoreConstructor };
+export type { FFmpegCoreConstructor };

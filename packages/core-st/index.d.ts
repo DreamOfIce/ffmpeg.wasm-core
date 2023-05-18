@@ -1,7 +1,8 @@
-interface FFmpegSingleThreadCore extends EmscriptenModule {
+interface FFmpegMultThreadCore extends EmscriptenModule {
   //flags
-  thread: false;
-  wasi: false;
+  simd: boolean;
+  thread: boolean;
+  wasi: boolean;
   // methods
   addFunction: typeof addFunction;
   ccall: typeof ccall;
