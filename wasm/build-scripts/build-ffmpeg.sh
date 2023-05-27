@@ -5,7 +5,7 @@ source $(dirname $0)/var.sh
 
 if [[ "$FFMPEG_ST" != "yes" ]]; then
   mkdir -p packages/core-mt/dist
-  EXPORTED_FUNCTIONS="[_malloc, lengthBytesUTF8, stringToUTF8, UTF8ToString]"
+  EXPORTED_FUNCTIONS="[_free, _malloc, lengthBytesUTF8, stringToUTF8, UTF8ToString]"
   EXTRA_FLAGS=(
     -pthread                                      # enable pthreads support
     -s PROXY_TO_PTHREAD=1                         # detach main() from browser/UI main thread
@@ -14,7 +14,7 @@ if [[ "$FFMPEG_ST" != "yes" ]]; then
   )
 else
   mkdir -p packages/core-st/dist
-  EXPORTED_FUNCTIONS="[_malloc, lengthBytesUTF8, stringToUTF8, UTF8ToString]"
+  EXPORTED_FUNCTIONS="[_free, _malloc, lengthBytesUTF8, stringToUTF8, UTF8ToString]"
   EXTRA_FLAGS=(
     -o packages/core-st/dist/ffmpeg-core.js
 		-s INITIAL_MEMORY=33554432                    # 32MB
@@ -36,9 +36,8 @@ FLAGS=(
   -s EXPORT_NAME="createFFmpegCore"                            # assign export name for browser
   -s ALLOW_TABLE_GROWTH                                        # allow new functions to be added to the table
   -s EXPORTED_FUNCTIONS="$EXPORTED_FUNCTIONS"                  # export main and proxy_main funcs
-  -s EXPORTED_RUNTIME_METHODS="[FS, cwrap, ccall, setValue]"   # export preamble funcs
+  -s EXPORTED_RUNTIME_METHODS="[FS, addFunction, cwrap, ccall, setValue]"   # export preamble funcs
   --post-js wasm/src/post.js
-  --pre-js wasm/src/pre.js
   $OPTIM_FLAGS
   ${EXTRA_FLAGS[@]}
 )

@@ -44,7 +44,9 @@ extern "C"
    */
   bool EMSCRIPTEN_KEEPALIVE execAsync(int argc, char **argv, void (*resolve)(int code), void (*reject)(int code))
   {
-    shared_ptr<int> code{0};
+    shared_ptr<int> code{new int(0)};
+    *code = 0;
+    printf("%d\n", (int)code.get());
     atomic<bool> start{false};
     thread taskThread([&]()
                       { 
@@ -53,16 +55,18 @@ extern "C"
                         queue.execute(); });
     auto result = queue.proxyCallback(
         taskThread.native_handle(),
-        [argc, argv, &code]()
+        [argc, argv, code]()
         {
           *code = exec(argc, argv);
         },
-        [&resolve, &code]()
+        [resolve, code]()
         {
+          printf("resolve with %d\n", *code);
           resolve(*code);
         },
-        [&reject, &code]()
+        [reject, code]()
         {
+          printf("reject with %d\n", *code);
           reject(*code);
         });
     start = true;

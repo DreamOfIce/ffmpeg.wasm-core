@@ -26,15 +26,10 @@ TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmak
 
 # Flags for code optimization, focus on speed instead
 # of size
-OPTIM_FLAGS="-O3"
-
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  # Use closure complier only in linux environment
-  OPTIM_FLAGS="$OPTIM_FLAGS --closure=1"
-fi
+OPTIM_FLAGS="-O3 --closure=1"
 
 # Unset OPTIM_FLAGS can speed up build
-# OPTIM_FLAGS=""
+# OPTIM_FLAGS="-g -sASSERTIONS=2 -fsanitize=undefined"
 
 CFLAGS_BASE="$OPTIM_FLAGS -I$BUILD_DIR/include"
 CFLAGS="$CFLAGS_BASE -s USE_PTHREADS=1"
