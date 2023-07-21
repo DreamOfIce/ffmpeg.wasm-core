@@ -2,15 +2,6 @@
   "name": "@ffmpeg.wasm/core-mt",
   "version": "0.12.0",
   "description": "ffmpeg.wasm core (mult thread)",
-  "main": "dist/ffmpeg-core.js",
-  "types": "index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DreamOfIce/ffmpeg.wasm-core.git"
-  },
   "keywords": [
     "ffmpeg",
     "webassembly",
@@ -18,12 +9,27 @@
     "audio",
     "transcode"
   ],
-  "author": "jeromewus@gmail.com",
-  "license": "MIT",
+  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme",
   "bugs": {
     "url": "https://github.com/DreamOfIce/ffmpeg.wasm-core/issues"
   },
-  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamOfIce/ffmpeg.wasm-core.git"
+  },
+  "license": "MIT",
+  "author": "jeromewus@gmail.com",
+  "exports": {
+    ".": "./dist/ffmpeg-core.js",
+    "./dist/ffmpeg-core.js": "./dist/ffmpeg-core.js",
+    "./dist/ffmpeg-core.wasm": "./dist/ffmpeg-core.wasm",
+    "./dist/ffmpeg-core.worker.js": "./dist/ffmpeg-core.worker.js"
+  },
+  "main": "dist/ffmpeg-core.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   }
