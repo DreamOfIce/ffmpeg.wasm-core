@@ -29,7 +29,7 @@ TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmak
 OPTIM_FLAGS="-O3 --closure=1"
 
 # Unset OPTIM_FLAGS can speed up build
-# OPTIM_FLAGS="-g -sASSERTIONS=2 -fsanitize=undefined"
+# OPTIM_FLAGS="-O0 -g -sASSERTIONS=2 -fsanitize=undefined"
 
 CFLAGS_BASE="$OPTIM_FLAGS -I$BUILD_DIR/include"
 CFLAGS="$CFLAGS_BASE -s USE_PTHREADS=1"
