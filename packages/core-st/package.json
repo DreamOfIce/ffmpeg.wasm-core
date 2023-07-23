@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg.wasm/core-st",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ffmpeg.wasm core (single thread)",
   "keywords": [
     "ffmpeg",
@@ -22,8 +22,7 @@
   "exports": {
     ".": "./dist/core.js",
     "./dist/core.js": "./dist/core.js",
-    "./dist/core.wasm": "./dist/core.wasm",
-    "./dist/core.worker.js": "./dist/core.worker.js"
+    "./dist/core.wasm": "./dist/core.wasm"
   },
   "main": "dist/core.js",
   "files": [

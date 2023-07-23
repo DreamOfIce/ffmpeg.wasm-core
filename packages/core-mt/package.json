@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg.wasm/core-mt",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ffmpeg.wasm core (mult thread)",
   "keywords": [
     "ffmpeg",
