@@ -20,12 +20,12 @@
   "license": "MIT",
   "author": "jeromewus@gmail.com",
   "exports": {
-    ".": "./dist/ffmpeg-core.js",
-    "./dist/ffmpeg-core.js": "./dist/ffmpeg-core.js",
-    "./dist/ffmpeg-core.wasm": "./dist/ffmpeg-core.wasm",
-    "./dist/ffmpeg-core.worker.js": "./dist/ffmpeg-core.worker.js"
+    ".": "./dist/core.js",
+    "./dist/core.js": "./dist/core.js",
+    "./dist/core.wasm": "./dist/core.wasm",
+    "./dist/core.worker.js": "./dist/core.worker.js"
   },
-  "main": "dist/ffmpeg-core.js",
+  "main": "dist/core.js",
   "types": "index.d.ts",
   "files": [
     "dist"

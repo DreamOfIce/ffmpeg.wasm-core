@@ -9,14 +9,14 @@ if [[ "$FFMPEG_ST" != "yes" ]]; then
   EXTRA_FLAGS=(
     -pthread                                      # enable pthreads support
 #    -s PROXY_TO_PTHREAD=1                         # detach main() from browser/UI main thread
-    -o packages/core-mt/dist/ffmpeg-core.js
+    -o packages/core-mt/dist/core.js
 		-s INITIAL_MEMORY=1073741824                  # 1GB
   )
 else
   mkdir -p packages/core-st/dist
   EXPORTED_FUNCTIONS="[_main, _free, _malloc, lengthBytesUTF8, stringToUTF8, UTF8ToString]"
   EXTRA_FLAGS=(
-    -o packages/core-st/dist/ffmpeg-core.js
+    -o packages/core-st/dist/core.js
 		-s INITIAL_MEMORY=33554432                    # 32MB
 		-s MAXIMUM_MEMORY=1073741824                  # 1GB
 		-s ALLOW_MEMORY_GROWTH=1
