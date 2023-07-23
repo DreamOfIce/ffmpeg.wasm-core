@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-EM_VERSION=3.1.35
+EM_VERSION=3.1.43
 
 docker pull emscripten/emsdk:$EM_VERSION
 docker run \

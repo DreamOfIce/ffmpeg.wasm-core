@@ -9,13 +9,13 @@
     "audio",
     "transcode"
   ],
-  "homepage": "https://github.com/DreamOfIce/ffmpeg.wasm-core#readme",
+  "homepage": "https://github.com/ffmpeg.wasm/ffmpeg.wasm-core#readme",
   "bugs": {
-    "url": "https://github.com/DreamOfIce/ffmpeg.wasm-core/issues"
+    "url": "https://github.com/ffmpeg.wasm/ffmpeg.wasm-core/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DreamOfIce/ffmpeg.wasm-core.git"
+    "url": "git+https://github.com/ffmpeg.wasm/ffmpeg.wasm-core.git"
   },
   "license": "MIT",
   "author": "jeromewus@gmail.com",
