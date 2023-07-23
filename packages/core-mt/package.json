@@ -19,12 +19,6 @@
   },
   "license": "MIT",
   "author": "jeromewus@gmail.com",
-  "exports": {
-    ".": "./dist/core.js",
-    "./dist/core.js": "./dist/core.js",
-    "./dist/core.wasm": "./dist/core.wasm",
-    "./dist/core.worker.js": "./dist/core.worker.js"
-  },
   "main": "dist/core.js",
   "types": "index.d.ts",
   "files": [

@@ -1,4 +1,4 @@
-interface FFmpegMultThreadCore extends EmscriptenModule {
+interface FFmpegSingleThreadCore extends EmscriptenModule {
   //flags
   simd: boolean;
   thread: boolean;
