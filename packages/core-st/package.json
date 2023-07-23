@@ -1,6 +1,6 @@
 {
   "name": "@ffmpeg.wasm/core-st",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "description": "ffmpeg.wasm core (single thread)",
   "keywords": [
     "ffmpeg",
