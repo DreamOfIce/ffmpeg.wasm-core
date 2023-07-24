@@ -8,7 +8,6 @@ if [[ "$FFMPEG_ST" != "yes" ]]; then
   EXPORTED_FUNCTIONS="[_main, _free, _malloc, lengthBytesUTF8, stringToUTF8, UTF8ToString]"
   EXTRA_FLAGS=(
     -pthread                                      # enable pthreads support
-#    -s PROXY_TO_PTHREAD=1                         # detach main() from browser/UI main thread
     -o packages/core-mt/dist/core.js
 		-s INITIAL_MEMORY=1073741824                  # 1GB
   )
